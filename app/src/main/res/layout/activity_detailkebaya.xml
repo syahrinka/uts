@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".detailkebaya">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <LinearLayout
+            android:layout_width="375dp"
+            android:layout_height="1000dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/text_jeniskebaya"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:textSize="20dp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/text_modelkebaya"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:autoLink="web"
+                android:textSize="15dp"
+                />
+
+            <TextView
+                android:id="@+id/text_deskripsi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="280dp"
+                android:text="TextView"
+                android:textSize="20dp" />
+        </LinearLayout>
+    </ScrollView>
+
+    <android.support.constraint.Constraints
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </android.support.constraint.Constraints>
+
+    <ImageButton
+        android:id="@+id/hapus"
+        android:layout_width="57dp"
+        android:layout_height="62dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="64dp"
+        android:layout_marginBottom="56dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/update"
+        app:srcCompat="@drawable/delete"
+        tools:ignore="MissingConstraints" />
+
+    <ImageButton
+        android:id="@+id/update"
+        android:layout_width="66dp"
+        android:layout_height="60dp"
+        android:layout_gravity="bottom|end"
+        android:layout_marginBottom="56dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:srcCompat="@drawable/update4"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="45dp" />
+
+</android.support.constraint.ConstraintLayout>
